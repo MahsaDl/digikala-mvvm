@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+    <RelativeLayout
+        android:id="@+id/rlGozaresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:id="@+id/persion24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_baseline_bug_report_24" />
+
+        <TextView
+            android:id="@+id/tvHesab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/persion24"
+            android:text="گزارش خطا"
+            style="@style/LargeBlackTextView"
+            />
+        <View
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvHesab"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="#369F9F9F"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlPorsesh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlGozaresh"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_baseline_help_outline_24"/>
+
+        <TextView
+            android:id="@+id/tvPorsesh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/help"
+            android:text="پرسش های متداول"
+            style="@style/LargeBlackTextView"
+            />
+        <View
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvPorsesh"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="#369F9F9F"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlSharayeteEstefsde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlPorsesh"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_baseline_content_paste_24"/>
+
+        <TextView
+            android:id="@+id/tvSharayet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/content"
+            android:text="شرایط استفاده"
+            style="@style/LargeBlackTextView"
+            />
+        <View
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvSharayet"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="#369F9F9F"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlAboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlSharayeteEstefsde"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/tvUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_baseline_supervised_user_circle_24"/>
+
+        <TextView
+            android:id="@+id/tvDarbare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tvUs"
+            android:text="درباره ما"
+            style="@style/LargeBlackTextView"
+            />
+        <View
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvDarbare"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="#369F9F9F"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlTamas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlAboutUs"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_baseline_phone_24"/>
+
+        <TextView
+            android:id="@+id/tvTamas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tvPhone"
+            android:text="تماس با ما"
+            style="@style/LargeBlackTextView"
+            />
+        <View
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvTamas"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="#369F9F9F"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlTanzimat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlTamas"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/tvBrush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_baseline_brush_24"/>
+
+        <TextView
+            android:id="@+id/tvSafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tvBrush"
+            android:text="تنظیمات صفحه"
+            style="@style/LargeBlackTextView"
+            />
+        <View
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvSafe"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="#369F9F9F"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlEmtiaz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlTanzimat"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/tvStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_baseline_star_border_24"/>
+
+        <TextView
+            android:id="@+id/tvEmtiaz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tvStar"
+            android:text="امتیاز به دیجی کالا"
+            style="@style/LargeBlackTextView"
+            />
+        <View
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvEmtiaz"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="#369F9F9F"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/khoroj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlEmtiaz"
+        android:drawableRight="@drawable/ic_baseline_logout_24"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/tvkhoroj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:textColor="#FF0303"
+        app:layout_constraintRight_toLeftOf="@id/khoroj"
+        android:text=" خروج از حساب کاربری"
+        app:layout_constraintTop_toBottomOf="@id/rlEmtiaz"
+        style="@style/LargeBlackTextView"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvkhoroj"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Digikala"
+        android:layout_marginTop="140dp"
+        android:textSize="25sp"
+        android:textColor="#F44336"/>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

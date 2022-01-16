@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+    <RelativeLayout
+        android:id="@+id/rlRahnama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="15dp"
+
+        >
+
+        <TextView
+            android:id="@+id/rahnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="راهنمای ثبت آگهی"
+            style="@style/LargeBlackTextView"
+             />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rahnama"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/view_color" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlPorsesh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlRahnama"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+
+        >
+
+        <TextView
+            android:id="@+id/tvImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="عکس آگهی"
+            style="@style/LargeBlackTextView"
+            />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/img" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlSharayeteEstefsde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlPorsesh"
+        android:padding="15dp"
+        >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="عنوان"
+            style="@style/LargeBlackTextView"
+            />
+
+        <EditText
+            android:id="@+id/etName"
+            style="@style/LargeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/tvName"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_corner"
+            android:padding="8dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlAboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlSharayeteEstefsde"
+        android:padding="15dp"
+        >
+
+        <TextView
+            android:id="@+id/tvModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="مدل"
+            style="@style/LargeBlackTextView"
+            />
+
+        <EditText
+            android:id="@+id/etModel"
+            style="@style/LargeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/tvModel"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_corner"
+            android:padding="8dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlTamas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlAboutUs"
+        android:padding="15dp"
+        >
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="قیمت (تومان)"
+            style="@style/LargeBlackTextView"
+            />
+
+        <EditText
+            android:id="@+id/etPrice"
+            style="@style/LargeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/tvPrice"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_corner"
+            android:padding="8dp" />
+
+
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btnSabt"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="ثبت کالای جدید"/>
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

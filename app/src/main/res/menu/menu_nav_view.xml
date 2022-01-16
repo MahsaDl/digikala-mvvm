@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_myDigikala"
+        android:title="دیجی کالای من"
+        android:icon="@drawable/ic_baseline_perm_identity_24"
+        />
+
+        <item android:id="@+id/nav_sabadeKharid"
+        android:title="سبد خرید"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        />
+    <item android:id="@+id/nav_dastebandiha"
+        android:title="دسته بندی ها"
+        android:icon="@drawable/ic_baseline_list_24"
+        />
+    <item android:id="@+id/nav_home"
+        android:title="خانه"
+        android:icon="@drawable/ic_baseline_home_24"
+        />
+    <item android:id="@+id/nav_media"
+        android:title="تماشای فیلم"
+        android:icon="@drawable/ic_baseline_video_library_24"
+        />
+    <item android:id="@+id/nav_insert_product"
+        android:title="ثبت آگهی"
+        android:icon="@drawable/ic_baseline_add_circle_outline_24"
+        />
+    <item android:id="@+id/nav_Video"
+        android:title="تماشای ویدیو"
+        android:icon="@drawable/ic_baseline_videocam_24"
+        />
+
+</menu>

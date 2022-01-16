@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_right_details">20dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="drawable_padding">24dp</dimen>
+    <dimen name="normal_padding">16dp</dimen>
+    <dimen name="standard_margin">16dp</dimen>
+    <dimen name="margin_scroll_items">32dp</dimen>
+    <dimen name="margin_scroll_items_top">18dp</dimen>
+
+    <dimen name="standard_views_radius">8dp</dimen>
+    <dimen name="standard_font_size">16sp</dimen>
+    <dimen name="marginscroll">42dp</dimen>
+</resources>

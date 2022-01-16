@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tvPriceChart"
+        style="@style/bottom_sheet"
+        android:layout_marginTop="8dp"
+        android:text="نمودار قیمت"
+        app:drawableEndCompat="@drawable/ic_baseline_show_chart_24"
+        app:drawableRightCompat="@drawable/ic_baseline_show_chart_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <View
+        style="@style/view_separator"
+        android:layout_marginTop="68dp"
+        android:background="@color/line_separator"
+        app:layout_constraintBottom_toTopOf="@+id/tvCompare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvCompare"
+        style="@style/bottom_sheet"
+        android:layout_marginTop="4dp"
+        android:text="مقایسه محصول"
+        app:drawableEndCompat="@drawable/ic_baseline_compare_24"
+        app:drawableRightCompat="@drawable/ic_baseline_compare_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPriceChart" />
+
+    <View
+        style="@style/view_separator"
+        android:layout_marginTop="132dp"
+        android:background="@color/line_separator"
+        app:layout_constraintBottom_toTopOf="@+id/tvShare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvShare"
+        style="@style/bottom_sheet"
+        android:layout_marginTop="4dp"
+        android:text="به اشتراک گذاری کالا"
+        app:drawableEndCompat="@drawable/ic_baseline_share_24"
+        app:drawableRightCompat="@drawable/ic_baseline_share_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCompare" />
+
+    <View
+        style="@style/view_separator"
+        android:layout_marginTop="192dp"
+        android:background="@color/line_separator"
+        app:layout_constraintBottom_toTopOf="@+id/tvAlert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.156" />
+
+    <TextView
+        android:id="@+id/tvAlert"
+        style="@style/bottom_sheet"
+        android:layout_marginTop="4dp"
+        android:text="اطلاع رسانی شگفت انگیز"
+        app:drawableEndCompat="@drawable/ic_baseline_notifications_none_24"
+        app:drawableRightCompat="@drawable/ic_baseline_notifications_none_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvShare" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

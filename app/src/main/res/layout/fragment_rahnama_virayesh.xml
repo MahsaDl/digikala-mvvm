@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <TextView
+        android:id="@+id/tvAks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="عکس آگهی"
+        style="@style/LargeBlackTextView"
+        android:layout_margin="16dp"/>
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvAks"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="16dp"
+        style="@style/SmallTextView"
+        android:text="از تصاویر با کیفیت و واقعی استفاده کنید."/>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="16dp"
+        style="@style/SmallTextView"
+        android:text="تصاویر شامل اطلاعات شخصی مجاز نیستند."/>
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv2"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="16dp"
+        style="@style/SmallTextView"
+        android:text="تصاویر متعلق به آگهی دیگری در دیجی کالا نباشند."/>
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv3"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="16dp"
+        style="@style/SmallTextView"
+        android:text="از درج شماره ی تماس و قیمت روی عکس آگهی خودداری کنید."/>
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv4"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="16dp"
+        style="@style/SmallTextView"
+        android:text="استفاده ی ابزاری از تصاویر اشخاص برای معرفی کالا مجاز نیست."/>
+
+    <TextView
+        android:id="@+id/tvOnvan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv5"
+        android:text="عنوان آگهی"
+        style="@style/LargeBlackTextView"
+        android:layout_margin="16dp"/>
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvOnvan"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="16dp"
+        style="@style/SmallTextView"
+        android:text="نام کالا یا خدمات خود را در نام آگهی قرار دهید."/>
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv6"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="16dp"
+        style="@style/SmallTextView"
+        android:text="هر آگهی فقط برای یک کالا است."/>
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv7"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="16dp"
+        style="@style/SmallTextView"
+        android:text="امکان انتشار آگهی با محتوای مشابه وجود ندارد."/>
+    <TextView
+        android:id="@+id/tv9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv8"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="16dp"
+        style="@style/SmallTextView"
+        android:text="از درج قیمت در نام آگهی خودداری کنید."/>
+    <TextView
+        android:id="@+id/tv10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv9"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="16dp"
+        style="@style/SmallTextView"
+        android:text="استفاده از کلماتی مانند: مفت،حراج و موارد مشابه مجاز نیست."/>
+</androidx.constraintlayout.widget.ConstraintLayout>

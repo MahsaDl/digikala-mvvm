@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="270dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F2F2F2"
+    >
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="wrap_content"
+        android:layout_height="278dp"
+        android:src="@drawable/internet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="خطا در اتصال به اینترنت"
+        android:fontFamily="@font/digikala_font"
+        android:layout_marginTop="220dp"
+        app:layout_constraintStart_toEndOf="@id/btnWifi"
+        app:layout_constraintTop_toTopOf="@id/gif"
+        app:layout_constraintEnd_toStartOf="@id/btnNetwork"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:textColor="#FA5128"/>
+
+    <ImageButton
+        android:id="@+id/btnWifi"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toStartOf="@id/gif"
+        android:background="@drawable/ic_baseline_wifi_24"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <ImageButton
+        android:id="@+id/btnNetwork"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_baseline_import_export_24"
+        app:layout_constraintStart_toEndOf="@id/gif"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

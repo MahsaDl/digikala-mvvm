@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+    <RelativeLayout
+        android:id="@+id/rlDigital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:id="@+id/persion24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_baseline_phone_iphone_24" />
+
+        <TextView
+            android:id="@+id/tvHesab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/persion24"
+            android:text="کالای دیجیتال"
+            style="@style/LargeBlackTextView"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+        <View
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvHesab"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="#369F9F9F" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlKhane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlDigital"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_baseline_restaurant_24" />
+
+        <TextView
+            android:id="@+id/tvPorsesh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/help"
+            android:text="خانه و آشپزخانه"
+
+
+            style="@style/LargeBlackTextView"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_new_24"
+            />
+        <View
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvPorsesh"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="#369F9F9F"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlSalamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlKhane"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_baseline_face_24" />
+
+        <TextView
+            android:id="@+id/tvSharayet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/content"
+            android:text="زیبایی و سلامت"
+
+
+            style="@style/LargeBlackTextView"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_new_24"
+            />
+        <View
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvSharayet"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="#369F9F9F"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlKodak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlSalamat"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/tvUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_baseline_bedroom_baby_24"/>
+
+        <TextView
+            android:id="@+id/tvDarbare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tvUs"
+            android:text="اسباب بازی کودک و نوزاد"
+
+
+            style="@style/LargeBlackTextView"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_new_24"
+            />
+        <View
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvDarbare"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="#369F9F9F"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlPoshak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlKodak"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_baseline_checkroom_24" />
+
+        <TextView
+            android:id="@+id/tvTamas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tvPhone"
+            android:text="مد و پوشاک"
+
+
+            style="@style/LargeBlackTextView"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_new_24"
+            />
+        <View
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvTamas"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="#369F9F9F"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlVarzesh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlPoshak"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvBrush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_baseline_sports_tennis_24" />
+
+        <TextView
+            android:id="@+id/tvSafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tvBrush"
+            android:text="ورزش و سفر"
+
+
+            style="@style/LargeBlackTextView"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_new_24"
+            />
+        <View
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvSafe"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="#369F9F9F"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlMarket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlVarzesh"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_baseline_shopping_cart_24" />
+
+        <TextView
+            android:id="@+id/tvEmtiaz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tvStar"
+            android:text="سوپرمارکت"
+
+
+            style="@style/LargeBlackTextView"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_new_24"
+            />
+        <View
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvEmtiaz"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="#369F9F9F"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlKhodro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlMarket"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_baseline_directions_car_24" />
+
+        <TextView
+            android:id="@+id/tvKhodro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tvRight"
+            android:text="خودرو و تجهیزات صنعتی"
+
+
+            style="@style/LargeBlackTextView"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_new_24"
+            />
+        <View
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvKhodro"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="#369F9F9F"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlKetab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlKhodro"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvRightBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_baseline_mode_edit_24" />
+
+        <TextView
+            android:id="@+id/tvBook"
+            style="@style/LargeBlackTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tvRightBook"
+
+
+            android:text="کتاب و لوازم تحریر" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_new_24"
+            />
+        <View
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvBook"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="#369F9F9F"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Digikala"
+        android:textSize="25sp"
+        android:layout_marginBottom="53dp"
+        android:textColor="#F44336"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

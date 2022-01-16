@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/parent_layoutList"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="3dp"
+    app:contentPadding="3dp"
+
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+        <ImageView
+            android:id="@+id/imgCardview"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toLeftOf="@id/imgCardview"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="27dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="name"
+            android:textStyle="bold"
+            style="@style/NormalBlackTextView"
+            android:fontFamily="@font/digikala_font"
+            />
+        <TextView
+            android:id="@+id/tvModelRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvName"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/digikala_font"
+
+            app:layout_constraintRight_toLeftOf="@id/imgCardview"
+            android:text="مدل:"
+            style="@style/SmallBlackTextView"/>
+        <TextView
+            android:id="@+id/tvModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvName"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/digikala_font"
+
+            app:layout_constraintRight_toLeftOf="@id/tvModelRight"
+            android:text="model"
+            style="@style/SmallBlackTextView" />
+        <TextView
+            android:id="@+id/tvAnbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/digikala_font"
+            android:textSize="12sp"
+            app:layout_constraintRight_toLeftOf="@id/imgCardview"
+            android:text="anbar" />
+        <TextView
+            android:id="@+id/tvToman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="تومان"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            style="@style/SmallBlackTextView"
+            android:fontFamily="@font/digikala_font"
+            />
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintLeft_toRightOf="@id/tvToman"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="price"
+            android:textStyle="bold"
+
+            style="@style/NormalBlackTextView"
+            android:fontFamily="@font/digikala_font"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

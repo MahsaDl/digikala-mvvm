@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_dastebandiha"
+        android:name="com.example.digikalamvvm.view.fragment.DastebandihaFragment"
+        tools:layout="@layout/fragment_dastebandiha"
+        android:label="دسته بندی ها" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.digikalamvvm.view.fragment.HomeFragment"
+        android:label="دیجی کالا"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_detailsFragment"
+            app:destination="@id/detailsFragment"
+            />
+        <argument
+            android:name="id"
+            android:defaultValue="1"
+            app:argType="integer"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_myDigikala"
+        android:name="com.example.digikalamvvm.view.fragment.MyDigikalaFragment"
+        tools:layout="@layout/fragment_mydigikala"
+        android:label="دیجی کالای من" >
+        <action
+            android:id="@+id/action_nav_myDigikala_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_nav_myDigikala_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_sabadeKharid"
+        tools:layout="@layout/fragment_sabadekharid"
+        android:name="com.example.digikalamvvm.view.fragment.SabadeKharidFragment"
+        android:label="سبد خرید" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.digikalamvvm.view.fragment.DetailsFragment"
+        android:label="جزئیات کالا" >
+
+
+        <action
+            android:id="@+id/action_detailsFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_detailsFragment_to_nav_update"
+            app:destination="@id/updateFragment" />
+
+
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.digikalamvvm.view.activity.MainActivity"
+        android:label="MainActivity" />
+    <fragment
+        android:id="@+id/nav_media"
+        android:name="com.example.digikalamvvm.view.fragment.MediaFragment"
+        tools:layout="@layout/fragment_media"
+        android:label="تماشای فیلم"
+        />
+    <fragment
+        android:id="@+id/nav_insert_product"
+        android:name="com.example.digikalamvvm.view.fragment.InsertProductFragment"
+        android:label="ثبت آگهی" >
+        <action
+            android:id="@+id/action_nav_insert_product_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_insert_product_to_rahnamaFragment"
+            app:destination="@id/rahnamaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.example.digikalamvvm.view.fragment.UpdateProductFragment"
+        android:label="ویرایش آگهی" >
+
+        <action
+            android:id="@+id/action_updateFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_updateFragment_to_rahnamaVirayeshFragment"
+            app:destination="@id/rahnamaVirayeshFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.digikalamvvm.view.fragment.SettingFragment"
+        android:label="تنظیمات" >
+        <action
+            android:id="@+id/action_settingFragment_to_aboutUsFragment"
+            app:destination="@id/aboutUsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.example.digikalamvvm.view.fragment.AboutUsFragment"
+        android:label="درباره ما" />
+    <fragment
+        android:id="@+id/rahnamaFragment"
+        android:name="com.example.digikalamvvm.view.fragment.RahnamaFragment"
+        android:label="راهنمای ثبت آگهی" />
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.digikalamvvm.view.fragment.FavoritesFragment"
+        android:label="لیست مورد علاقه" />
+    <fragment
+        android:id="@+id/nav_Video"
+        android:name="com.example.digikalamvvm.view.fragment.VideoFragment"
+        android:label="تماشای ویدیو" />
+    <fragment
+        android:id="@+id/rahnamaVirayeshFragment"
+        android:name="com.example.digikalamvvm.view.fragment.RahnamaVirayeshFragment"
+        android:label="راهنمای ویرایش آگهی" />
+</navigation>

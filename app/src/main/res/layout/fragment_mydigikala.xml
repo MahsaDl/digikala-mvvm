@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="userName"
+        android:id="@+id/tvUserName"
+        style="@style/NormalTextView"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="22dp"/>
+    <ImageView
+        android:id="@+id/imgKif"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintTop_toBottomOf="@id/tvUserName"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/centerView"
+        android:src="@drawable/kif" />
+
+    <TextView
+        android:id="@+id/tvKif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imgKif"
+        app:layout_constraintLeft_toLeftOf="@id/imgKif"
+        app:layout_constraintRight_toRightOf="@id/imgKif"
+        android:text="فعال سازی کیف پول"
+        style="@style/SmallBlackTextView"
+        android:layout_marginTop="5dp"
+         />
+    <View
+        android:id="@+id/centerView"
+        android:layout_width="1dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tvUserName"
+        app:layout_constraintLeft_toRightOf="@id/imgKif"
+        app:layout_constraintRight_toLeftOf="@id/imgEmtiaz"
+        android:background="#369F9F9F"
+        />
+
+    <ImageView
+        android:id="@+id/imgEmtiaz"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/emtiaz"
+        app:layout_constraintTop_toBottomOf="@id/tvUserName"
+        app:layout_constraintLeft_toRightOf="@id/centerView"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvEmtiaz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="۰ امتیاز"
+        style="@style/SmallBlackTextView"
+        app:layout_constraintTop_toBottomOf="@id/imgEmtiaz"
+        app:layout_constraintLeft_toLeftOf="@id/imgEmtiaz"
+        app:layout_constraintRight_toRightOf="@id/imgEmtiaz"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/tvMyOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NormalTextView"
+        android:text="سفارش های من"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvEmtiaz"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <HorizontalScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@id/tvMyOrder"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_scroll_items_top">
+            <ImageView
+                android:id="@+id/img_scroll"
+
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="@dimen/marginscroll"
+                android:layout_marginBottom="@dimen/margin_scroll_items"
+                android:layout_marginLeft="@dimen/marginscroll"
+                android:layout_marginTop="@dimen/margin_scroll_items_top"
+                android:src="@drawable/marjo"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_scroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مرجوع شده"
+                style="@style/SmallTextView"
+                app:layout_constraintLeft_toLeftOf="@id/img_scroll"
+                app:layout_constraintRight_toRightOf="@id/img_scroll"
+                app:layout_constraintTop_toBottomOf="@id/img_scroll" />
+
+            <ImageView
+                android:id="@+id/img_scroll0"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="@dimen/marginscroll"
+                android:layout_marginBottom="@dimen/margin_scroll_items"
+                android:layout_marginLeft="@dimen/marginscroll"
+                android:layout_marginTop="@dimen/margin_scroll_items_top"
+                app:layout_constraintLeft_toRightOf="@id/img_scroll"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/laghv"
+                />
+
+            <TextView
+                android:id="@+id/tv_scroll0"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="لغو شده"
+                style="@style/SmallTextView"
+                app:layout_constraintLeft_toLeftOf="@id/img_scroll0"
+                app:layout_constraintRight_toRightOf="@id/img_scroll0"
+                app:layout_constraintTop_toBottomOf="@id/img_scroll0" />
+
+
+            <ImageView
+                android:id="@+id/img_scroll1"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="@dimen/marginscroll"
+                android:layout_marginBottom="@dimen/margin_scroll_items"
+                android:layout_marginLeft="@dimen/marginscroll"
+                android:layout_marginTop="@dimen/margin_scroll_items_top"
+                app:layout_constraintLeft_toRightOf="@id/img_scroll0"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/tahvil"
+                />
+
+            <TextView
+                android:id="@+id/tv_scroll1"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تحویل شده"
+                style="@style/SmallTextView"
+                app:layout_constraintLeft_toLeftOf="@id/img_scroll1"
+                app:layout_constraintRight_toRightOf="@id/img_scroll1"
+                app:layout_constraintTop_toBottomOf="@id/img_scroll1" />
+
+            <ImageView
+                android:id="@+id/img_scroll2"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="@dimen/marginscroll"
+                android:layout_marginRight="@dimen/marginscroll"
+
+                android:layout_marginTop="16dp"
+                android:src="@drawable/pardazesh"
+                app:layout_constraintLeft_toRightOf="@id/img_scroll1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_scroll2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="در حال پردازش"
+                style="@style/SmallTextView"
+                android:layout_marginTop="5dp"
+                app:layout_constraintLeft_toLeftOf="@id/img_scroll2"
+                app:layout_constraintRight_toRightOf="@id/img_scroll2"
+                app:layout_constraintTop_toBottomOf="@id/img_scroll2" />
+
+            <ImageView
+                android:id="@+id/img_scroll3"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="@dimen/marginscroll"
+                android:layout_marginBottom="@dimen/margin_scroll_items"
+                android:layout_marginLeft="@dimen/marginscroll"
+                android:layout_marginTop="@dimen/margin_scroll_items_top"
+                android:src="@drawable/entezar"
+                app:layout_constraintLeft_toRightOf="@id/img_scroll2"
+                app:layout_constraintRight_toRightOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_scroll3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="در انتظار پرداخت"
+                style="@style/SmallTextView"
+                android:layout_marginTop="5dp"
+                app:layout_constraintLeft_toLeftOf="@id/img_scroll3"
+                app:layout_constraintRight_toRightOf="@id/img_scroll3"
+                app:layout_constraintTop_toBottomOf="@id/img_scroll3" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </HorizontalScrollView>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/scroll"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:id="@+id/persion24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_baseline_favorite_border_24" />
+
+        <TextView
+            android:id="@+id/tvHesab"
+            style="@style/NormalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/persion24"
+            android:text="لیست مورد علاقه" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_new_24" />
+        <View
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvHesab"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="#369F9F9F"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlNazarat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlFavorite"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_baseline_comment_24" />
+
+        <TextView
+            android:id="@+id/tvPorsesh"
+            style="@style/NormalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/help"
+
+            android:text="نقد و نظرات" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_new_24"
+            />
+        <View
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvPorsesh"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="#369F9F9F"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlNazarat"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_baseline_card_giftcard_24"/>
+
+        <TextView
+            android:id="@+id/tvSharayet"
+            style="@style/NormalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/content"
+
+            android:text="کارت های هدیه" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_new_24"
+            />
+
+        <View
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvSharayet"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="#369F9F9F" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlKart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlAddress"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_baseline_location_on_24" />
+
+        <TextView
+            android:id="@+id/tvDarbare"
+            style="@style/NormalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tvUs"
+
+            android:text="آدرس ها" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_new_24"
+            />
+        <View
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvDarbare"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="#369F9F9F"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlHesab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rlKart"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_baseline_portrait_24" />
+
+        <TextView
+            android:id="@+id/tvTamas"
+            style="@style/NormalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tvPhone"
+
+            android:text="اطلاعات حساب کاربری" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_new_24"
+            />
+        <View
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvTamas"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="#369F9F9F"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imgForoshande"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        app:layout_constraintTop_toBottomOf="@id/rlHesab"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/foroshande"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-179dp"
+        tools:layout_editor_absoluteY="292dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="16dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/imageSlider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="190dp"
+                    app:sliderAnimationDuration="600"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderAutoCycleEnabled="true"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="15dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#5A5A5A"
+                    app:sliderIndicatorUnselectedColor="@color/tire"
+                    app:sliderScrollTimeInSec="1"
+                    app:sliderStartAutoCycle="true" />
+
+            </androidx.cardview.widget.CardView>
+
+            <HorizontalScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/margin_scroll_items_top">
+                    <ImageView
+                        android:id="@+id/img_scroll"
+
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginRight="@dimen/margin_scroll_items"
+                        android:layout_marginBottom="@dimen/margin_scroll_items"
+                        android:layout_marginLeft="@dimen/margin_scroll_items"
+                        android:layout_marginTop="@dimen/margin_scroll_items_top"
+                        android:src="@drawable/haraj"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        style="@style/SmallTextView"
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/tv_scroll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="حراج استایل"
+                        app:layout_constraintLeft_toLeftOf="@id/img_scroll"
+                        app:layout_constraintRight_toRightOf="@id/img_scroll"
+                        app:layout_constraintTop_toBottomOf="@id/img_scroll" />
+
+                    <ImageView
+                        android:id="@+id/img_scroll0"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginRight="@dimen/margin_scroll_items"
+                        android:layout_marginBottom="@dimen/margin_scroll_items"
+                        android:layout_marginLeft="@dimen/margin_scroll_items"
+                        android:layout_marginTop="@dimen/margin_scroll_items_top"
+                        app:layout_constraintLeft_toRightOf="@id/img_scroll"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/pay"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_scroll0"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="دیجی پی"
+                        style="@style/SmallTextView"
+                        app:layout_constraintLeft_toLeftOf="@id/img_scroll0"
+                        app:layout_constraintRight_toRightOf="@id/img_scroll0"
+                        app:layout_constraintTop_toBottomOf="@id/img_scroll0" />
+
+
+                    <ImageView
+                        android:id="@+id/img_scroll1"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginRight="@dimen/margin_scroll_items"
+                        android:layout_marginBottom="@dimen/margin_scroll_items"
+                        android:layout_marginLeft="@dimen/margin_scroll_items"
+                        android:layout_marginTop="@dimen/margin_scroll_items_top"
+                        app:layout_constraintLeft_toRightOf="@id/img_scroll0"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/digiplas"
+                         />
+
+                    <TextView
+                        android:id="@+id/tv_scroll1"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="دیجی پلاس"
+                        style="@style/SmallTextView"
+                        app:layout_constraintLeft_toLeftOf="@id/img_scroll1"
+                        app:layout_constraintRight_toRightOf="@id/img_scroll1"
+                        app:layout_constraintTop_toBottomOf="@id/img_scroll1" />
+
+                    <ImageView
+                        android:id="@+id/img_scroll2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginRight="@dimen/margin_scroll_items"
+                        android:layout_marginBottom="@dimen/margin_scroll_items"
+                        android:layout_marginLeft="@dimen/margin_scroll_items"
+                        android:layout_marginTop="@dimen/margin_scroll_items_top"
+                        android:src="@drawable/khane"
+                        app:layout_constraintLeft_toRightOf="@id/img_scroll1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_scroll2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="خانه و آشپزخانه"
+                        style="@style/SmallTextView"
+                        android:layout_marginTop="3dp"
+                        app:layout_constraintLeft_toLeftOf="@id/img_scroll2"
+                        app:layout_constraintRight_toRightOf="@id/img_scroll2"
+                        app:layout_constraintTop_toBottomOf="@id/img_scroll2" />
+
+                    <ImageView
+                        android:id="@+id/img_scroll3"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginRight="@dimen/margin_scroll_items"
+                        android:layout_marginBottom="@dimen/margin_scroll_items"
+                        android:layout_marginLeft="@dimen/margin_scroll_items"
+                        android:layout_marginTop="@dimen/margin_scroll_items_top"
+                        android:src="@drawable/poshak"
+                        app:layout_constraintLeft_toRightOf="@id/img_scroll2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_scroll3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="مد و پوشاک"
+                        style="@style/SmallTextView"
+                        android:layout_marginTop="3dp"
+                        app:layout_constraintLeft_toLeftOf="@id/img_scroll3"
+                        app:layout_constraintRight_toRightOf="@id/img_scroll3"
+                        app:layout_constraintTop_toBottomOf="@id/img_scroll3" />
+
+                    <ImageView
+                        android:id="@+id/img_scroll4"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginRight="@dimen/margin_scroll_items"
+                        android:layout_marginBottom="@dimen/margin_scroll_items"
+                        android:layout_marginLeft="@dimen/margin_scroll_items"
+                        android:layout_marginTop="@dimen/margin_scroll_items_top"
+                        android:src="@drawable/market"
+                        app:layout_constraintLeft_toRightOf="@id/img_scroll3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_scroll4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="سوپرمارکت"
+                        style="@style/SmallTextView"
+                        android:layout_marginTop="3dp"
+                        app:layout_constraintLeft_toLeftOf="@id/img_scroll4"
+                        app:layout_constraintRight_toRightOf="@id/img_scroll4"
+                        app:layout_constraintTop_toBottomOf="@id/img_scroll4" />
+
+                    <ImageView
+                        android:id="@+id/img_scroll5"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginRight="@dimen/margin_scroll_items"
+                        android:layout_marginBottom="@dimen/margin_scroll_items"
+                        android:layout_marginLeft="@dimen/margin_scroll_items"
+                        android:layout_marginTop="@dimen/margin_scroll_items_top"                        android:src="@drawable/digital"
+                        app:layout_constraintLeft_toRightOf="@id/img_scroll4"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_scroll5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="کالای دیجیتال"
+                        app:layout_constraintLeft_toLeftOf="@id/img_scroll5"
+                        style="@style/SmallTextView"
+                        android:layout_marginTop="3dp"
+                        app:layout_constraintRight_toRightOf="@id/img_scroll5"
+                        app:layout_constraintTop_toBottomOf="@id/img_scroll5" />
+
+                    <ImageView
+                        android:id="@+id/img_scroll6"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginRight="@dimen/margin_scroll_items"
+                        android:layout_marginBottom="@dimen/margin_scroll_items"
+                        android:layout_marginLeft="@dimen/margin_scroll_items"
+                        android:layout_marginTop="@dimen/margin_scroll_items_top"                        android:src="@drawable/magnet"
+                        app:layout_constraintLeft_toRightOf="@id/img_scroll5"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_scroll6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="مگنت"
+                        style="@style/SmallTextView"
+                        android:layout_marginTop="3dp"
+                        app:layout_constraintLeft_toLeftOf="@id/img_scroll6"
+                        app:layout_constraintRight_toRightOf="@id/img_scroll6"
+                        app:layout_constraintTop_toBottomOf="@id/img_scroll6" />
+
+                    <ImageView
+                        android:id="@+id/img_scroll7"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginRight="@dimen/margin_scroll_items"
+                        android:layout_marginBottom="@dimen/margin_scroll_items"
+                        android:layout_marginLeft="@dimen/margin_scroll_items"
+                        android:layout_marginTop="@dimen/margin_scroll_items_top"                        android:src="@drawable/madrese"
+                        app:layout_constraintLeft_toRightOf="@id/img_scroll6"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/tv_scroll7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="بازگشت به مدرسه"
+                        style="@style/SmallTextView"
+                        app:layout_constraintLeft_toLeftOf="@id/img_scroll7"
+                        app:layout_constraintRight_toRightOf="@id/img_scroll7"
+                        app:layout_constraintTop_toBottomOf="@id/img_scroll7" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvPishnahade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:text="پیشنهاد"
+                    style="@style/LargeBlackTextView"
+                    android:textSize="20sp"
+                     />
+                <TextView
+                    android:id="@+id/tvShegeftangiz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="شگفت انگیز"
+                    android:textColor="@color/myview"
+                    android:fontFamily="@font/digikala_font"
+                    android:textSize="20sp"
+                    android:layout_toLeftOf="@id/tvPishnahade" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/horizontalRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <ImageView
+                    android:id="@+id/imgLeftTop"
+                    android:layout_width="240dp"
+                    android:layout_height="135dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/softlan"
+                    android:layout_marginRight="200dp"/>
+
+                <ImageView
+                    android:id="@+id/imgLeftBottom"
+                    android:layout_width="240dp"
+                    android:layout_height="135dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/imgLeftTop"
+                    android:layout_marginTop="10dp"
+
+                    android:src="@drawable/hambazi"
+                    android:layout_marginRight="200dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgRightTop"
+                    android:layout_width="240dp"
+                    android:layout_height="135dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+
+                    android:src="@drawable/avalineshterak"
+                    android:layout_marginLeft="200dp"
+
+                    />
+                <ImageView
+                    android:id="@+id/imgRightBottom"
+                    android:layout_width="240dp"
+                    android:layout_height="135dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/pril"
+                    android:layout_below="@id/imgRightTop"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginLeft="200dp"
+
+                    />
+            </RelativeLayout>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/selector_default_edittext"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/btnSortGrid"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_default_edittext"
+                        android:src="@drawable/ic_sort_gridview" />
+
+                    <ImageButton
+                        android:id="@+id/btnSortList"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_default_edittext"
+                        android:fontFamily="@font/digikala_font"
+                        android:gravity="start"
+                        android:src="@drawable/ic_sort_list"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/standard_font_size" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/digikala_font"
+                        android:gravity="center_vertical"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:text="@string/sort"
+                        android:textSize="@dimen/standard_font_size" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
